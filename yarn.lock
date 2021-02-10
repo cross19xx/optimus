@@ -5469,6 +5469,13 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-native-watch-connectivity@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-watch-connectivity/-/react-native-watch-connectivity-1.0.3.tgz#20cdf13216df1c5869d459acc856410867e54238"
+  integrity sha512-YITROIsVJw2mw5bm2Xr0waob16EdWJKpIO1B7AJWEpoWwSRu6bS/x1Z0QOhIFDWhRJFNvTQwnnflCq6PjflXNQ==
+  dependencies:
+    lodash.sortby "^4.7.0"
+
 react-native@0.63.4:
   version "0.63.4"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.4.tgz#2210fdd404c94a5fa6b423c6de86f8e48810ec36"

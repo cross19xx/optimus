@@ -20,6 +20,14 @@
 		5FAF2A329D294D4BE804B3F7 /* libPods-Optimus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AC7125F57FC8A652270A27 /* libPods-Optimus.a */; };
 		6BFEE6F57319CA7DFA1C8532 /* libPods-Optimus-OptimusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472CF55E270CA79893330156 /* libPods-Optimus-OptimusTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		FAA0788C25D4202F0066691C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA0788A25D4202E0066691C /* Interface.storyboard */; };
+		FAA0788E25D420320066691C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA0788D25D420320066691C /* Assets.xcassets */; };
+		FAA0789525D420320066691C /* Optimus-watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAA0789425D420320066691C /* Optimus-watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAA0789A25D420320066691C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0789925D420320066691C /* InterfaceController.swift */; };
+		FAA0789C25D420320066691C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0789B25D420320066691C /* ExtensionDelegate.swift */; };
+		FAA0789E25D420320066691C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0789D25D420320066691C /* ComplicationController.swift */; };
+		FAA078A025D420330066691C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA0789F25D420330066691C /* Assets.xcassets */; };
+		FAA078A425D420330066691C /* Optimus-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FAA0788825D4202E0066691C /* Optimus-watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,46 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "Optimus-tvOS";
 		};
+		FAA0789625D420320066691C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA0789325D420320066691C;
+			remoteInfo = "Optimus-watchOS Extension";
+		};
+		FAA078A225D420330066691C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA0788725D4202E0066691C;
+			remoteInfo = "Optimus-watchOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAA078A825D420340066691C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAA0789525D420320066691C /* Optimus-watchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA078AC25D420340066691C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FAA078A425D420330066691C /* Optimus-watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -67,6 +114,24 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F1FF044CF82526A4E02A279B /* Pods-Optimus-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Optimus-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Optimus-tvOSTests/Pods-Optimus-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2435979AD7785FF40A42651 /* Pods-Optimus-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Optimus-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Optimus-tvOSTests/Pods-Optimus-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA16500325D40C0C002F9659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FA16500525D40C0D002F9659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA16500725D40C0D002F9659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA16501125D40C0E002F9659 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FA16501325D40C0E002F9659 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FA16501525D40C0E002F9659 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FA16501725D40C0F002F9659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA16501925D40C0F002F9659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA0788825D4202E0066691C /* Optimus-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Optimus-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA0788B25D4202F0066691C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FAA0788D25D420320066691C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA0788F25D420320066691C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA0789425D420320066691C /* Optimus-watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Optimus-watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA0789925D420320066691C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FAA0789B25D420320066691C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FAA0789D25D420320066691C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FAA0789F25D420330066691C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA078A125D420330066691C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECF8C51E3F536AAB43A8D6E /* libPods-Optimus-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA0789125D420320066691C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +234,10 @@
 				13B07FAE1A68108700A75B9A /* Optimus */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* OptimusTests */,
+				FA16500125D40C0C002F9659 /* Optimus-watchOS */,
+				FA16501025D40C0E002F9659 /* Optimus-watchOS Extension */,
+				FAA0788925D4202E0066691C /* Optimus-watchOS */,
+				FAA0789825D420320066691C /* Optimus-watchOS Extension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A45743B773B15BB0BAE72F9A /* Pods */,
@@ -178,6 +254,8 @@
 				00E356EE1AD99517003FC87E /* OptimusTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Optimus-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Optimus-tvOSTests.xctest */,
+				FAA0788825D4202E0066691C /* Optimus-watchOS.app */,
+				FAA0789425D420320066691C /* Optimus-watchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +273,50 @@
 				F1FF044CF82526A4E02A279B /* Pods-Optimus-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA16500125D40C0C002F9659 /* Optimus-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FA16500225D40C0C002F9659 /* Interface.storyboard */,
+				FA16500525D40C0D002F9659 /* Assets.xcassets */,
+				FA16500725D40C0D002F9659 /* Info.plist */,
+			);
+			path = "Optimus-watchOS";
+			sourceTree = "<group>";
+		};
+		FA16501025D40C0E002F9659 /* Optimus-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA16501125D40C0E002F9659 /* InterfaceController.swift */,
+				FA16501325D40C0E002F9659 /* ExtensionDelegate.swift */,
+				FA16501525D40C0E002F9659 /* ComplicationController.swift */,
+				FA16501725D40C0F002F9659 /* Assets.xcassets */,
+				FA16501925D40C0F002F9659 /* Info.plist */,
+			);
+			path = "Optimus-watchOS Extension";
+			sourceTree = "<group>";
+		};
+		FAA0788925D4202E0066691C /* Optimus-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0788A25D4202E0066691C /* Interface.storyboard */,
+				FAA0788D25D420320066691C /* Assets.xcassets */,
+				FAA0788F25D420320066691C /* Info.plist */,
+			);
+			path = "Optimus-watchOS";
+			sourceTree = "<group>";
+		};
+		FAA0789825D420320066691C /* Optimus-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0789925D420320066691C /* InterfaceController.swift */,
+				FAA0789B25D420320066691C /* ExtensionDelegate.swift */,
+				FAA0789D25D420320066691C /* ComplicationController.swift */,
+				FAA0789F25D420330066691C /* Assets.xcassets */,
+				FAA078A125D420330066691C /* Info.plist */,
+			);
+			path = "Optimus-watchOS Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +353,12 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				1DE73D04109C3A8D62692F55 /* [CP] Copy Pods Resources */,
+				FAA078AC25D420340066691C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FAA078A325D420330066691C /* PBXTargetDependency */,
 			);
 			name = Optimus;
 			productName = Optimus;
@@ -280,13 +404,48 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* Optimus-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FAA0788725D4202E0066691C /* Optimus-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA078A925D420340066691C /* Build configuration list for PBXNativeTarget "Optimus-watchOS" */;
+			buildPhases = (
+				FAA0788625D4202E0066691C /* Resources */,
+				FAA078A825D420340066691C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA0789725D420320066691C /* PBXTargetDependency */,
+			);
+			name = "Optimus-watchOS";
+			productName = "Optimus-watchOS";
+			productReference = FAA0788825D4202E0066691C /* Optimus-watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FAA0789325D420320066691C /* Optimus-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA078A525D420340066691C /* Build configuration list for PBXNativeTarget "Optimus-watchOS Extension" */;
+			buildPhases = (
+				FAA0789025D420320066691C /* Sources */,
+				FAA0789125D420320066691C /* Frameworks */,
+				FAA0789225D420320066691C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Optimus-watchOS Extension";
+			productName = "Optimus-watchOS Extension";
+			productReference = FAA0789425D420320066691C /* Optimus-watchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -303,6 +462,15 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					FAA0788725D4202E0066691C = {
+						CreatedOnToolsVersion = 12.3;
+						ProvisioningStyle = Automatic;
+					};
+					FAA0789325D420320066691C = {
+						CreatedOnToolsVersion = 12.3;
+						DevelopmentTeam = PM59892VZZ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -323,6 +491,8 @@
 				00E356ED1AD99517003FC87E /* OptimusTests */,
 				2D02E47A1E0B4A5D006451C7 /* Optimus-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* Optimus-tvOSTests */,
+				FAA0788725D4202E0066691C /* Optimus-watchOS */,
+				FAA0789325D420320066691C /* Optimus-watchOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -356,6 +526,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA0788625D4202E0066691C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA0788E25D420320066691C /* Assets.xcassets in Resources */,
+				FAA0788C25D4202F0066691C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA0789225D420320066691C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA078A025D420330066691C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +776,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAA0789025D420320066691C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA0789C25D420320066691C /* ExtensionDelegate.swift in Sources */,
+				FAA0789A25D420320066691C /* InterfaceController.swift in Sources */,
+				FAA0789E25D420320066691C /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -602,20 +799,50 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* Optimus-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		FAA0789725D420320066691C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA0789325D420320066691C /* Optimus-watchOS Extension */;
+			targetProxy = FAA0789625D420320066691C /* PBXContainerItemProxy */;
+		};
+		FAA078A325D420330066691C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA0788725D4202E0066691C /* Optimus-watchOS */;
+			targetProxy = FAA078A225D420330066691C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA16500225D40C0C002F9659 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA16500325D40C0C002F9659 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA0788A25D4202E0066691C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA0788B25D4202F0066691C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 878C286AC884B743DA53F647 /* Pods-Optimus-OptimusTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = OptimusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -632,10 +859,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C79DB049A4DFAFF4DA56B16 /* Pods-Optimus-OptimusTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = OptimusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -719,7 +947,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -748,7 +976,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -766,6 +994,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Optimus-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -775,7 +1007,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optimus-tvOS.app/Optimus-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -793,6 +1025,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Optimus-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -802,7 +1038,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optimus-tvOS.app/Optimus-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -829,6 +1065,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -853,7 +1090,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
@@ -889,6 +1126,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -906,7 +1144,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
@@ -915,7 +1153,144 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA078A625D420340066691C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PM59892VZZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Optimus-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callstack.optimus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		FAA078A725D420340066691C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PM59892VZZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Optimus-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callstack.optimus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		FAA078AA25D420340066691C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = Optimus_watchOS_Extension;
+				INFOPLIST_FILE = "Optimus-watchOS/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callstack.optimus.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		FAA078AB25D420340066691C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = Optimus_watchOS_Extension;
+				INFOPLIST_FILE = "Optimus-watchOS/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callstack.optimus.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
 			};
 			name = Release;
 		};
@@ -963,6 +1338,24 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA078A525D420340066691C /* Build configuration list for PBXNativeTarget "Optimus-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA078A625D420340066691C /* Debug */,
+				FAA078A725D420340066691C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA078A925D420340066691C /* Build configuration list for PBXNativeTarget "Optimus-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA078AA25D420340066691C /* Debug */,
+				FAA078AB25D420340066691C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Optimus_watchOS" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="35" alignment="left" id="yuM-7L-mFm">
+                            <items>
+                                <label height="39" alignment="right" text="2.2 mi" id="enW-Pa-Qbq"/>
+                                <imageView width="38" height="38" alignment="left" image="turn_left" contentMode="center" id="RiS-GT-mln"/>
+                            </items>
+                        </group>
+                        <label width="136" height="91" alignment="left" text="West Commonwealth Ave." textAlignment="left" baselineAdjustment="alignCenters" numberOfLines="3" id="eoP-Kx-iN7">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <group width="1" height="26" alignment="right" verticalAlignment="bottom" id="c1M-d0-jhP">
+                            <items>
+                                <label alignment="right" verticalAlignment="center" text="Then" textAlignment="right" id="VNK-2R-4UB"/>
+                                <imageView width="24" height="24" alignment="right" verticalAlignment="center" image="turn_straight" contentMode="scaleAspectFit" id="z6O-7E-WHQ"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="desc" destination="eoP-Kx-iN7" id="xY7-dV-TNl"/>
+                        <outlet property="distance" destination="enW-Pa-Qbq" id="4Qi-ol-W1h"/>
+                        <outlet property="footer" destination="c1M-d0-jhP" id="K6e-hB-sKJ"/>
+                        <outlet property="footerImg" destination="z6O-7E-WHQ" id="G5Z-UX-kWb"/>
+                        <outlet property="image" destination="RiS-GT-mln" id="yQz-AF-6yE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-22.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="turn_left" width="20" height="20"/>
+        <image name="turn_straight" width="24" height="24"/>
+    </resources>
+</document>
